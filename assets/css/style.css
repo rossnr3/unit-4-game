@@ -1,0 +1,56 @@
+/*
+    Style sheet for Crystals Collector Game 
+*/
+
+* {
+    font-weight: bold;
+}
+
+body {
+    background-image: url("../images/background.png");
+    background-color: aqua;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+h1 {
+    background-color: rgb(197, 86, 46);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#instructions {
+    height: 360px;
+    background-color: rgb(243,223,186);
+    color: rgb(35, 141, 43);
+}
+
+#target-number {
+    background-color: rgb(67,173,131);
+    margin-right: 10px;
+    margin-left: 0;
+    height: 140px;
+}
+
+#score-board {
+    height: 140px;
+    background-color: rgb(13, 230, 230);
+}
+
+.crystals {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.current-score {
+    background-color: rgb(21, 139, 143);
+    color: whitesmoke;
+}
+
+#score {
+    height: 100px;
+    font-size: 28px;
+}

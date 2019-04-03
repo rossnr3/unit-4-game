@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+
+    <!-- Reset css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Link to Bootstrap JS, Popper.js and jQuery -->
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+
+    <!-- Link to external stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link to game script -->
+    <script src="assets/javascript/game.js" defer></script>
+</head>
+
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="container">
+
+    <!-- Game Header -->
+    <div class="row">
+        <div class="col-lg-4">
+            <h1>Crystals Collector!</h1>
+        </div>
+    </div>
+
+    <!-- Game Instructions -->
+    <div class="row">
+        <div class="col-lg-6" id="instructions">
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+            <p>
+                There are four crystals below. By clicking on a crystal you will
+                add a specific amount of points to your total score.
+            </p>
+            <p>
+                You win the game by matching your total score to the random
+                number. You lose the game if your total score goes above the 
+                random number.
+            </p>
+            <p>
+                The value of each crystal is hidden from you until you click 
+                on it.
+            </p>
+            <p>
+                Each time when the game starts, the game will change the values 
+                of each crystal.
+            </p>
+        </div>
+    </div>
+
+    <!-- Current Number to match and score -->
+    <div class="row">
+        <div class="col-lg-3">
+            <h3 id="target-number">0</h3>
+        </div>
+        <div class="col-lg-2" id="score-board">
+            <p id="game-result"></p>
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+        </div>
+    </div>
+
+    <!-- Crystals -->
+    <div class="row">
+        <div class="col-lg-1 crystals">
+            <img class="btn-crystal" id="crystal-1" src="assets/images/Kinetic_Crystal.jpg" alt="Crystal 1" height="100px" width="100px">
+        </div>                     
+        <div class="col-lg-1 crystals">
+            <img class="btn-crystal" id="crystal-2" src="assets/images/rose-gold-fantasy-crystal.jpg" alt="Crystal 2" height="100px" width="100px">
+        </div>                     
+        <div class="col-lg-1 crystals">
+            <img class="btn-crystal" id="crystal-3" src="assets/images/surprisinghi.jpg" alt="Crystal 3" height="100px" width="100px">
+        </div>                     
+        <div class="col-lg-1 crystals">
+            <img class="btn-crystal" id="crystal-4" src="assets/images/TS-AMET-H.jpg" alt="Crystal 4" height="100px" width="100px">
+        </div>                     
+    </div>
+
+    <!-- Current Total Header  & Total -->
+    <div class="row">
+        <div class="col-lg-3 current-score">
+            Your total score is:
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 current-score" id="score">
+            0
+        </div>
+    </div>
+
+</body>
+</html>
